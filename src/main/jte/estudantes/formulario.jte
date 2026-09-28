@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="/css/formulario.css">
 </head>
 <body>
+<img src="/images/ifpb_cz.png" alt="Logo IFPB Campus Cajazeiras">
+
 <h1>Novo estudante</h1>
 <form method="post" action="/estudantes/confirmar">
     <input type="hidden" name="id" value="0">
 
     <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome">
+    <input class="estilo1" type="text" id="nome" name="nome">
 
     <label for="email">E-mail</label>
-    <input type="email" id="email" name="email">
+    <input class="estilo1" type="email" id="email" name="email">
 
     <label for="anoIngresso">Ano de ingresso</label>
     <input type="number" id="anoIngresso" name="anoIngresso" value="2026">
@@ -27,14 +29,14 @@
     </select>
 
     <label for="cidade">Cidade</label>
-    <input type="text" id="cidade" name="cidade" list="cidades">
+    <input class="estilo1" type="text" id="cidade" name="cidade" list="cidades">
     <datalist id="cidades">
         <option value="Cajazeiras"></option>
         <option value="Sousa"></option>
         <option value="São José de Piranhas"></option>
     </datalist>
 
-    <fieldset>
+    <fieldset class="estilo1">
         <legend>Turno</legend>
         <label><input type="radio" name="turno" value="Manhã" checked> Manhã</label>
         <label><input type="radio" name="turno" value="Tarde"> Tarde</label>
@@ -47,7 +49,7 @@
     </label>
 
     <label for="observacoes">Observações</label>
-    <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+    <textarea class="estilo1" id="observacoes" name="observacoes" rows="4"></textarea>
 
     <label for="dataNascimento">Data de nascimento</label>
     <input type="date" id="dataNascimento" name="dataNascimento">
